@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - dev
   pull_request:
     branches:
       - main
-      - dev
   workflow_dispatch:  # This allows you to manually trigger the workflow
 
 jobs:
@@ -16,7 +14,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]  # Add both Windows and Linux
+        os: [windows-latest]  # Add both Windows and Linux
         dotnet-version: [6.0]  # Or whatever version you are using
 
     steps:
