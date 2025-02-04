@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]  # Add both Windows and Linux
-        dotnet-version: [6.0]  # Or whatever version you are using
+        dotnet-version: [8.0]  # Or whatever version you are using
 
     steps:
       - name: Checkout code
