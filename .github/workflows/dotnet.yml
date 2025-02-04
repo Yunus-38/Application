@@ -33,7 +33,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: List repository file structure
-        run: dir /s
+        run: dir
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
