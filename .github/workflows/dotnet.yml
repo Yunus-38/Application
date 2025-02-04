@@ -31,10 +31,7 @@ jobs:
 
       - name: Build
         run: dotnet build --configuration Release
-
-      - name: List repository file structure
-        run: dir Application/bin
-
+        
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
