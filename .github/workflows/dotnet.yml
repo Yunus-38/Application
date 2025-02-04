@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app
-          path: 'Application/bin/Debug/net8.0'  # Adjust this path to point to your build output folder
+          path: 'Application/bin/Release/net8.0'  # Adjust this path to point to your build output folder
 
       - name: Run tests
         run: dotnet test --configuration Release
