@@ -9,6 +9,7 @@ on:
     branches:
       - main
       - dev
+  workflow_dispatch:  # This allows you to manually trigger the workflow
 
 jobs:
   build:
