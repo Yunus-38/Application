@@ -3,10 +3,10 @@ name: .NET Core Build and Test
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
   workflow_dispatch:  # This allows you to manually trigger the workflow
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]  # Add both Windows and Linux
-        dotnet-version: [8.0]  # Or whatever version you are using
+        dotnet-version: [8.0.x]  # Or whatever version you are using
 
     steps:
       - name: Checkout code
